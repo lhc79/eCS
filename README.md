@@ -5,8 +5,8 @@ embedded Coroutine Scheduler
 而不用人工设定堆栈和处理堆栈，所有任务共享同一个堆栈空间，同时在实现与风格
 近似于操作系统（Operating System，OS）。
 
-  eCS支持两种类型的任务：（借鉴Protothreads思想的）线程型（Thread）任务和
-FSM型任务，且都支持时间触发、消息和被优先调度一次排队。
+  eCS支持3种类型的任务：时间触发型任务、（借鉴Protothreads思想的）线程型
+（Thread）任务和FSM型任务，且都支持时间触发、消息和被优先调度一次排队。
   调度器相关文件：“eCS_cfg.h”、 “eCS.h”、 “eCS.c”
   1. 在工程主文件中包含“eCS.h”，其会自动包含“eCS_cfg.h”
   2. “eCS.c”和"eCS.h"已经设置为只读属性，无特殊情况不建议修改
