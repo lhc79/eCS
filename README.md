@@ -7,7 +7,7 @@ Each task automatically processes the stack, instead of manually setting the sta
 and processing the stack. All tasks share the same stack space, and the implementation 
 and style are similar to the operating system.  
    eCS supports three types of tasks: time triggered tasks, LOOP threaded tasks 
-based on protothreads and FSM tasks, all of which support time triggering, message 
+(likes protothreads) and FSM tasks, all of which support time triggering, message 
 and priority scheduling.  
    Relevant documents of dispatcher: "eCS_cfg.h", "eCs.h", "eCS.c".  
    1.Include "eCS.h" in the project main file, which automatically includes "eCS_cfg.h".  
